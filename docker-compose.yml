@@ -21,9 +21,10 @@ services:
     depends_on:
       - db
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/messagesdb
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: postgres
+      DB_HOST: db
+      DB_NAME: messagesdb
+      DB_USER: postgres
+      DB_PASSWORD: postgres
     networks:
       - app-network
 
